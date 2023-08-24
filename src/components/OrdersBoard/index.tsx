@@ -1,61 +1,21 @@
 import { Container, Board } from "./styles"
 
-export function OrdersContainer() {
+export function OrdersContainer(props: any) {
     return (
         <>
             <Board>
                 <header>
-                    <span>⏰</span>
-                    <strong>Fila de Espera</strong>
-                    <span>(1)</span>
+                    <span>props.icone</span>
+                    <strong>props.servico</strong>
+                    <span>props.ordem</span>
                 </header>
                 <Container>
-
                     <button type="button">
-                        <strong>Mesa 2:</strong>
-                        <span>2 itens</span>
-                    </button>
-                    <button type="button">
-                        <strong>Mesa 2:</strong>
-                        <span>2 itens</span>
-                    </button>
+                        <strong>props.mesa</strong>
+                        <span>props.itens</span>
+                    </button>                    
                 </Container>
             </Board>
-            <Board>
-                    <header>
-                        <span>⏰</span>
-                        <strong>Fila de Espera</strong>
-                        <span>(1)</span>
-                    </header>
-                    <Container>
-                        <button type="button">
-                            <strong>Mesa 2:</strong>
-                            <span>2 itens</span>
-                        </button>
-                        <button type="button">
-                            <strong>Mesa 2:</strong>
-                            <span>2 itens</span>
-                        </button>
-                    </Container>
-                </Board>
-                <Board>
-                    <header>
-                        <span>⏰</span>
-                        <strong>Fila de Espera</strong>
-                        <span>(1)</span>
-                    </header>
-                    <Container>
-                        <button type="button">
-                            <strong>Mesa 2:</strong>
-                            <span>2 itens</span>
-                        </button>
-                        <button type="button">
-                            <strong>Mesa 2:</strong>
-                            <span>2 itens</span>
-                        </button>
-                    </Container>
-                </Board>
-            </>
-        
+            </>     
     )
 }                
